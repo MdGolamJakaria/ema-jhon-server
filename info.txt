@@ -1,0 +1,4 @@
+DB_Name: emaJhonStore
+Collection_Name: products
+USER_NAME: emaJhonAdmin
+USER_PASSWORD: wLumsYBn0uodQtMy
