@@ -61,7 +61,7 @@ client.connect(err => {
         ordersCollection.insertOne(order)
             .then(result => {
                 console.log(result.insertedCount)
-                res.send(result.insertedCount>0)
+                res.send(result.insertedCount > 0)
             })
     })
 
@@ -80,6 +80,4 @@ app.get('/', (req, res) => {
     res.send('Hello ema-jhon-server!')
 })
 
-app.listen(port, () => {
-    console.log(`Running app listening at http://localhost:${port}`)
-})
+app.listen(process.env.PORT || port)
